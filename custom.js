@@ -526,10 +526,12 @@ $(function() {
     console.log(action);
     var welcome = `<p style="font-size:30px;margin-bottom:18px">Welcome Back</p>`;
    
-    $(".form").addClass("newf");
-    $(".form").prepend(welcome);
+ 
 
     if(action == '/moas/idplogin'){
+        
+        $(".form").addClass("newf");
+        $(".form").prepend(welcome);
         var sociallogin = `
         <div style="margin-top:30px;text-align:center" id="social">
         <div class="line" style="text-align:center;"><span class="line-innertext">Or Login with</span></div>
